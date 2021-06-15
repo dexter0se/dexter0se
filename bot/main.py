@@ -33,7 +33,7 @@ def tipCatcher(resp):
 
                 time.sleep(2)
 
-                if(float(value.split('$')[1]) >= 0.01) and (msg['channel_id'] != "617048119426678930"):
+                if(float(value.split('$')[1]) >= 0.02) and (msg['channel_id'] != "617048119426678930"):
 
                     bot.addReaction(msg['channel_id'],msg['id'],reaction)
 
