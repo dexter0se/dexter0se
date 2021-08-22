@@ -25,7 +25,7 @@ def tipCatcher(resp):
             if 'An airdrop appears' in msg['embeds'][0]['title']:
 
                 try:
-                    value = msg['embeds'][0]['description'].split('\xa0')[1].split(')')[0]
+                    value = msg['embeds'][0]['description'].split('\xa0')[1].split(')')[0].replace(",", "")
                 except:
                     value = "$0"
 
