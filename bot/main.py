@@ -4,7 +4,7 @@ import time
 # from mysql.connector import Error
 # import pandas as pd 
 
-bot = discum.Client(token='mfa.4D2NYkDNLToy-p2qBkkHKaXzASfyUUbPz15uwT2j7Z1J5Z8hQXF0onMXyOWMb2x61NONO7BAOdf6l4cwVP37', log=False)
+bot = discum.Client(token='mfa.TqD4L2CLDRy89XloByzadW4LiuzCWjLYCF7IBKNHel19ok32rYUrKwjm1deKnOkzYwrwmM_ETlh-MJEAlmOw', log=False)
 
 bot.sendMessage("845616861981835337", "Damn, I was down. But it feels good to be back! :)")
 
@@ -20,7 +20,7 @@ def tipCatcher(resp):
 
         msg = resp.parsed.auto()
         
-        if (msg['author']['id'] == "617037497574359050") and ("title" in msg['embeds'][0].keys()):
+        if (msg['author']['id'] == "617037497574359050"):
             
             msg_channel = msg['channel_id']
             msg_id = msg['id']
