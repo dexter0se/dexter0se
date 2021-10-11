@@ -21,6 +21,16 @@ def tipCatcher(resp):
         msg = resp.parsed.auto()
         
         if (msg['author']['id'] == "617037497574359050") and ("title" in msg['embeds'][0].keys()):
+            
+            msg_channel = msg['channel_id']
+            msg_id = msg['id']
+            msg_guild = msg['guild_id']
+
+            sleep(1)
+
+            msg_request = botRead.getMessage(msg_channel, msg_id).text
+            msg = json.loads(msg_request)[0]
+
 
             if 'An airdrop appears' in msg['embeds'][0]['title']:
 
